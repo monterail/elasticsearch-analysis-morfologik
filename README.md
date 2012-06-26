@@ -3,7 +3,7 @@ Morfologik (Polish) Analysis for ElasticSearch
 
 The Morfologik (Polish) Analysis plugin integrates Lucene Morfologik (polish) analysis module into elasticsearch.
 
-In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-analysis morfologik/1.0.0`.
+In order to install the plugin, simply run: `bin/plugin -install chytreg/elasticsearch-analysis-morfologik/1.0.0`.
 
     --------------------------------------------------
     | Morfologik Analysis Plugin    | ElasticSearch  |
