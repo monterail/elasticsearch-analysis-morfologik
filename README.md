@@ -14,14 +14,14 @@ This will download the plugin from the Central Maven Repository.
 
 For older versions of ElasticSearch, you can still use the longer:
 
-	bin/plugin -url https://oss.sonatype.org/service/local/repositories/releases/content/com/github/chytreg/elasticsearch-analysis-morfologik/1.0.0/elasticsearch-analysis-morfologik-1.0.0.zip install analysis-morfologik
-
+    bin/plugin -url http://bit.ly/17nO1Pq install analysis-morfologik
+	
 In order to declare this plugin as a dependency, add the following to your `pom.xml`:
 
 	<dependency>
 	    <groupId>com.github.chytreg</groupId>
 	    <artifactId>elasticsearch-analysis-morfologik</artifactId>
-	    <version>1.1.0</version>
+	    <version>1.0.0</version>
 	</dependency>
 
 
