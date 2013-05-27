@@ -23,7 +23,7 @@ import java.io.Reader;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.standard.StandardFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
-import org.apache.lucene.analysis.ReusableAnalyzerBase;
+import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.util.Version;
 
 import morfologik.stemming.PolishStemmer.DICTIONARY;
@@ -32,7 +32,7 @@ import morfologik.stemming.PolishStemmer.DICTIONARY;
  * {@link org.apache.lucene.analysis.Analyzer} using Morfologik library.
  * @see <a href="http://morfologik.blogspot.com/">Morfologik project page</a>
  */
-public class MorfologikAnalyzer extends ReusableAnalyzerBase {
+public class MorfologikAnalyzer extends Analyzer {
 
   private final DICTIONARY dictionary;
   private final Version version;

@@ -29,7 +29,7 @@ import org.apache.lucene.analysis.TokenFilter;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
-import org.apache.lucene.util.CharacterUtils;
+import org.apache.lucene.analysis.util.CharacterUtils;
 import org.apache.lucene.util.CharsRef;
 import org.apache.lucene.util.Version;
 
