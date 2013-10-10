@@ -27,7 +27,7 @@
 	</parent>
 
 	<properties>
-		<elasticsearch.version>0.19.3</elasticsearch.version>
+		<elasticsearch.version>0.90.0</elasticsearch.version>
 	</properties>
 
 	<repositories>
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>org.carrot2</groupId>
 			<artifactId>morfologik-polish</artifactId>
-			<version>1.5.3</version>
+			<version>1.6.0</version>
 		</dependency>
 
 		<dependency>
