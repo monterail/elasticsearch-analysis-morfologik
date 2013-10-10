@@ -6,36 +6,27 @@ The Morfologik (Polish) Analysis plugin integrates Lucene Morfologik (polish) an
 Installation
 ------------
 
-Simply run at the root of your ElasticSearch v0.20.2+ installation:
+Simply run at the root of your ElasticSearch according to the version you use:
 
-    bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/1.0.0
+- v0.90+
+  `bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/2.0.0`
 
-This will download the plugin from the Central Maven Repository.
+- v0.20.2+
+   `bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/1.0.0`
 
-For older versions of ElasticSearch, you can still use the longer:
-
-    bin/plugin -url http://bit.ly/17nO1Pq install analysis-morfologik
+- v0.20.1 and below:
+   `bin/plugin -url http://bit.ly/17nO1Pq install analysis-morfologik`
 	
 In order to declare this plugin as a dependency, add the following to your `pom.xml`:
 
 	<dependency>
 	    <groupId>com.github.chytreg</groupId>
 	    <artifactId>elasticsearch-analysis-morfologik</artifactId>
-	    <version>1.0.0</version>
+	    <version>$PLUGIN_VERSION</version>
 	</dependency>
 
 
-Version matrix:
-
-    --------------------------------------------------
-    | Morfologik Analysis Plugin    | ElasticSearch  |
-    --------------------------------------------------
-    | master                        | 0.19 -> master |
-    --------------------------------------------------
-    | 1.0.0                         | 0.19 -> master |
-    --------------------------------------------------
-
-The plugin includes the `morfologik` analyzer and `morfologik_stem` token filter.
+The plugin includes `morfologik` analyzer and `morfologik_stem` token filter.
 
 License
 -------
