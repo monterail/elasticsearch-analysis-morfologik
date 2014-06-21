@@ -30,7 +30,6 @@ import org.elasticsearch.indices.analysis.IndicesAnalysisService;
 import org.elasticsearch.index.analysis.TokenFilterFactory;
 
 import morfologik.stemming.*;
-import morfologik.stemming.PolishStemmer.DICTIONARY;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.morfologik.*;
 
@@ -52,7 +51,7 @@ public class MorfologikIndicesAnalysis extends AbstractComponent {
             }
 
             @Override public TokenStream create(TokenStream tokenStream) {
-                return new MorfologikFilter(tokenStream, PolishStemmer.DICTIONARY.COMBINED, Lucene.ANALYZER_VERSION);
+                return new MorfologikFilter(tokenStream, Lucene.ANALYZER_VERSION);
             }
         }));
     }
