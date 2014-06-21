@@ -23,7 +23,6 @@ import java.util.Collections;
 import java.util.List;
 
 import morfologik.stemming.*;
-import morfologik.stemming.PolishStemmer.DICTIONARY;
 
 import org.apache.lucene.analysis.TokenFilter;
 import org.apache.lucene.analysis.TokenStream;
@@ -61,13 +60,12 @@ public class MorfologikFilter extends TokenFilter {
    * Builds a filter for given PolishStemmer.DICTIONARY enum.
    *
    * @param in   input token stream
-   * @param dict PolishStemmer.DICTIONARY enum
    * @param version Lucene version compatibility for lowercasing.
    */
-  public MorfologikFilter(final TokenStream in, final DICTIONARY dict, final Version version) {
+  public MorfologikFilter(final TokenStream in, final Version version) {
     super(in);
     this.input = in;
-    this.stemmer = new PolishStemmer(dict);
+    this.stemmer = new PolishStemmer();
     this.charUtils = CharacterUtils.getInstance(version);
     this.lemmaList = Collections.emptyList();
   }

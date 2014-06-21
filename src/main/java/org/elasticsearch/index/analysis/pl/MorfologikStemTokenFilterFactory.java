@@ -20,7 +20,6 @@
 package org.elasticsearch.index.analysis.pl;
 
 import morfologik.stemming.*;
-import morfologik.stemming.PolishStemmer.DICTIONARY;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.morfologik.*;
 
@@ -43,6 +42,6 @@ public class MorfologikStemTokenFilterFactory extends AbstractTokenFilterFactory
     }
 
     @Override public TokenStream create(TokenStream tokenStream) {
-        return new MorfologikFilter(tokenStream, PolishStemmer.DICTIONARY.COMBINED, version);
+        return new MorfologikFilter(tokenStream, version);
     }
 }
