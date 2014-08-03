@@ -5,7 +5,7 @@
 	<artifactId>elasticsearch-analysis-morfologik</artifactId>
 	<packaging>jar</packaging>
 	<name>elasticsearch-analysis-morfologik</name>
-	<version>2.0.1-SNAPSHOT</version>
+	<version>2.1</version>
 	<description>Morfologik (Polish) Analysis for ElasticSearch</description>
 	<licenses>
 		<license>
@@ -15,9 +15,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:chytreg/elasticsearch-analysis-morfologik.git</connection>
-		<developerConnection>scm:git:git@github.com:chytreg/elasticsearch-analysis-morfologik.git</developerConnection>
-		<url>https://github.com/chytreg/elasticsearch-analysis-morfologik</url>
+		<connection>scm:git:git@github.com:ee/elasticsearch-analysis-morfologik.git</connection>
+		<developerConnection>scm:git:git@github.com:ee/elasticsearch-analysis-morfologik.git</developerConnection>
+		<url>https://github.com/ee/elasticsearch-analysis-morfologik</url>
 	</scm>
 
 	<parent>
@@ -27,7 +27,7 @@
 	</parent>
 
 	<properties>
-		<elasticsearch.version>0.90.0</elasticsearch.version>
+		<elasticsearch.version>1.1.0</elasticsearch.version>
 	</properties>
 
 	<repositories>
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>org.carrot2</groupId>
 			<artifactId>morfologik-polish</artifactId>
-			<version>1.6.0</version>
+			<version>1.9.0</version>
 		</dependency>
 
 		<dependency>

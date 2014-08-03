@@ -26,30 +26,13 @@ import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.util.Version;
 
-import morfologik.stemming.PolishStemmer.DICTIONARY;
-
 /**
  * {@link org.apache.lucene.analysis.Analyzer} using Morfologik library.
  * @see <a href="http://morfologik.blogspot.com/">Morfologik project page</a>
  */
 public class MorfologikAnalyzer extends Analyzer {
 
-  private final DICTIONARY dictionary;
   private final Version version;
-
-  /**
-   * Builds an analyzer for a given PolishStemmer.DICTIONARY enum.
-   *
-   * @param vers
-   *          lucene compatibility version
-   * @param dict
-   *          A constant specifying which dictionary to choose. See the
-   *          Morfologik documentation for details or use the default.
-   */
-  public MorfologikAnalyzer(final Version vers, final DICTIONARY dict) {
-    this.version = vers;
-    this.dictionary = dict;
-  }
 
   /**
    * Builds an analyzer for an original MORFOLOGIK dictionary.
@@ -57,7 +40,7 @@ public class MorfologikAnalyzer extends Analyzer {
    * @param vers         lucene compatibility version
    */
   public MorfologikAnalyzer(final Version vers) {
-    this(vers, DICTIONARY.MORFOLOGIK);
+    this.version = vers;
   }
 
   /**
@@ -79,6 +62,6 @@ public class MorfologikAnalyzer extends Analyzer {
 
     return new TokenStreamComponents(
       src,
-      new MorfologikFilter(new StandardFilter(this.version, src), this.dictionary, this.version));
+      new MorfologikFilter(new StandardFilter(this.version, src), this.version));
   }
 }
