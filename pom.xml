@@ -42,6 +42,11 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-morfologik</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.carrot2</groupId>
 			<artifactId>morfologik-polish</artifactId>
 			<version>1.9.0</version>
@@ -101,6 +106,7 @@
 							<artifactSet>
 								<includes>
 									<include>org.carrot2:morfologik*</include>
+                	<include>org.apache.lucene:lucene-analyzers-morfologik</include>
 								</includes>
 							</artifactSet>
 						</configuration>
