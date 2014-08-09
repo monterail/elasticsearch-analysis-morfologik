@@ -15,9 +15,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:ee/elasticsearch-analysis-morfologik.git</connection>
-		<developerConnection>scm:git:git@github.com:ee/elasticsearch-analysis-morfologik.git</developerConnection>
-		<url>https://github.com/ee/elasticsearch-analysis-morfologik</url>
+		<connection>scm:git:git@github.com:monterail/elasticsearch-analysis-morfologik.git</connection>
+		<developerConnection>scm:git:git@github.com:monterail/elasticsearch-analysis-morfologik.git</developerConnection>
+		<url>https://github.com/monterail/elasticsearch-analysis-morfologik</url>
 	</scm>
 
 	<parent>
