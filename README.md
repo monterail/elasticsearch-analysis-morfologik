@@ -8,6 +8,12 @@ Installation
 
 Simply run at the root of your ElasticSearch according to the version you use:
 
+- v1.3.1
+  `bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/2.3.1`
+
+- v1.3.0
+  `bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/2.3.0`
+
 - v0.90+
   `bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/2.0.0`
 
