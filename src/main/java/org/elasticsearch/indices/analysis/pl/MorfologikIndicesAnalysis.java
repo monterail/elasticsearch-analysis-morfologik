@@ -45,6 +45,15 @@ public class MorfologikIndicesAnalysis extends AbstractComponent {
     public MorfologikIndicesAnalysis(Settings settings, IndicesAnalysisService indicesAnalysisService) {
         super(settings);
 
+        indicesAnalysisService.analyzerProviderFactories().put(
+            "morfologik",
+            new PreBuiltAnalyzerProviderFactory(
+                "morfologik",
+                AnalyzerScope.INDICES,
+                new MorfologikAnalyzer(Lucene.ANALYZER_VERSION)
+            )
+        );
+
         indicesAnalysisService.tokenFilterFactories().put("morfologik_stem", new PreBuiltTokenFilterFactoryFactory(new TokenFilterFactory() {
             @Override public String name() {
                 return "morfologik_stem";
