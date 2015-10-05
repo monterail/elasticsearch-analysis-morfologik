@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>org.carrot2</groupId>
 			<artifactId>morfologik-polish</artifactId>
-			<version>1.9.0</version>
+			<version>1.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
